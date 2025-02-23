@@ -1,6 +1,6 @@
 ## 🚀 Deploy to Cloudflare
 
-[![Deploy to Cloudflare](https://img.shields.io/badge/🚀_Deploy_to_Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/workers/onboarding?repo=https://github.com/SudoR2spr/ai-image-generater-api-cloudflare-workers)
+[![Deploy to Cloudflare](https://img.shields.io/badge/🚀_Deploy_to_Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/workers-and-pages/create-project?url=https://github.com/SudoR2spr/ai-image-generater-api-cloudflare-workers)
 
 ## 📖 Deploy Guide
 
