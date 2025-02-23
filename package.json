@@ -1,0 +1,10 @@
+{
+  "name": "ai-image-generator",
+  "version": "1.0.0",
+  "description": "AI Image Generator using Cloudflare Workers",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {}
+}
