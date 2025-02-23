@@ -4,7 +4,7 @@
 
 ## 📖 Deploy Guide
 
-[![Deploy Guide](https://img.shields.io/badge/📖_Deploy_Guide-000000?style=for-the-badge&logo=github&logoColor=white)](https://t.me/Opleech_WD)
+[![Deploy Guide](https://img.shields.io/badge/📖_Deploy_Guide-000000?style=for-the-badge&logo=github&logoColor=white)](https://filestream-code-generater.pages.dev/ai-api-guide)
 
 # 🚀 AI Image Generator API (Cloudflare Workers)
 
