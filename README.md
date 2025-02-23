@@ -27,6 +27,54 @@ With this API, you can generate high-quality images using a variety of **Stable 
 
 ---
 
+# 🚀 AI Image Generator - Deploy Guide  
+
+This repository provides an AI Image Generator API powered by **Cloudflare Workers** and **Hugging Face Models**. Follow the steps below to deploy it using **GitHub Actions**.  
+
+---
+
+## 📌 Deployment via GitHub Actions  
+
+| Step | Description |
+|------|------------|
+| **✅ 1. Add GitHub Secrets** | Go to your repository **Settings → Secrets and Variables → Actions** and add the following secrets: |
+| **🔹 CLOUDFLARE_API_TOKEN** | Your Cloudflare API Token (Required for deployment) |
+| **🔹 HUGGINGFACE_TOKEN** | Your Hugging Face API Key (Required for generating images) |
+
+---
+
+| Step | Description |
+|------|------------|
+| **✅ 2. Update `wrangler.toml`** | Edit the `wrangler.toml` file and add your **Cloudflare `account_id`**: |
+| **📝 Example:** | ```toml<br>name = "ai-image-generator"<br>type = "javascript"<br>account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"<br>workers_dev = true<br>compatibility_date = "2024-02-23"<br>[vars]<br>HUGGINGFACE_TOKEN = "YOUR_HUGGINGFACE_API_KEY"``` |
+
+---
+
+| Step | Description |
+|------|------------|
+| **✅ 3. Verify GitHub Actions Workflow (`.github/workflows/deploy.yml`)** | Ensure the `deploy.yml` file exists inside `.github/workflows/` and contains the following: |
+| **📝 Example:** | ```yaml<br>name: Deploy to Cloudflare Workers<br>on:<br>  push:<br>    branches:<br>      - master  # Change to 'main' if your default branch is 'main'<br>jobs:<br>  deploy:<br>    runs-on: ubuntu-latest<br>    steps:<br>      - name: Checkout Code<br>        uses: actions/checkout@v3<br>      - name: Install Wrangler<br>        run: npm install -g wrangler<br>      - name: Deploy to Cloudflare<br>        run: wrangler publish<br>        env:<br>          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}``` |
+
+---
+
+## 🚀 How to Deploy  
+
+| Action | Steps |
+|--------|-------|
+| **Automatic Deployment** | Deployment happens **automatically** when you push changes to the **master** branch. |
+| **Manual Deployment** | 1️⃣ Go to **GitHub Actions** → Select **Deploy to Cloudflare Workers** workflow <br> 2️⃣ Click **Run Workflow** |
+
+✅ **Your Worker will be live on Cloudflare!** 🎉  
+
+---
+
+## 📌 Need Help?  
+
+| Command | Description |
+|---------|------------|
+| `wrangler tail` | Check Cloudflare Worker logs |
+| [Cloudflare Workers Docs](https://developers.cloudflare.com/workers/) | Official Cloudflare Workers documentation |
+
 ## 🎯 How to Use
 
 This API utilizes **Hugging Face Inference API** to generate AI-powered images.  
