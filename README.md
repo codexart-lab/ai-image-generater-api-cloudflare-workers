@@ -1,6 +1,8 @@
-## 🚀 Deploy to Cloudflare
+## 🚀 Deploy to Cloudflare Workers
 
-[![Deploy to Cloudflare](https://img.shields.io/badge/🚀_Deploy_to_Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/workers-and-pages/create-project?url=https://github.com/SudoR2spr/ai-image-generater-api-cloudflare-workers)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/SudoR2spr/ai-image-generater-api-cloudflare-workers)
+
+Click the button above to deploy this project directly to Cloudflare Workers!
 
 ## 📖 Deploy Guide
 
