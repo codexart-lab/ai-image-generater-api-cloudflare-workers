@@ -1,6 +1,6 @@
 ## 🚀 Deploy to Cloudflare Workers
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/SudoR2spr/ai-image-generater-api-cloudflare-workers)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/codexart-lab/ai-image-generater-api-cloudflare-workers)
 
 Click the button above to deploy this project directly to Cloudflare Workers!
 
